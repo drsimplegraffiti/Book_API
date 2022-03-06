@@ -11,6 +11,7 @@ router.post(
   bookController.CreateBook
 );
 router.get("/book/all", bookController.GetAllBooks);
+
 router.get("/book/bookById", bookController.GetBookById);
 router.delete("/book/delete", bookController.DeleteBookById);
 router.put(

@@ -8,14 +8,15 @@ const welcome_note = require("./welcome.json");
 const log = (arg) => console.log(arg);
 const port = config.port || 5678;
 
-//Database connection
+//!Database connection
 const connectDB = require("./db/db");
 connectDB();
 
+//? Routes
 const BookRouter = require("./routes/books.router");
 const AuthorRouter = require("./routes/author.router");
 
-// Middleware
+//! Middleware
 app.use(cors());
 app.use(helmet());
 app.use(compression());
@@ -29,7 +30,9 @@ app.get("/", (req, res) => {
 app.use(BookRouter);
 app.use(AuthorRouter);
 
-// Listen to server
+// TODO: Add 404 page
+
+//*  Listen to server
 app.listen(port, () => {
   log(`🎈🎈 App running on ${port}`);
 });

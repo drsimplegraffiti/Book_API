@@ -29,12 +29,12 @@ module.exports = class BookService {
       },
       {
         $project: {
-          name: 1, // shows oonly name
-          summary: 1, // shows oonly name
+          name: 1, //! shows only name
+          summary: 1, //! shows only name
           author: {
             country: 1,
             name: 1,
-          }, // shows oonly name
+          }, // shows only name
           _id: 0, // hides id
         },
       },
