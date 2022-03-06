@@ -13,6 +13,13 @@ Folder structure
 
 ---
 
+## Logging
+```
+const log = (arg) => console.log(arg);
+```
+
+---
+
 ## Configuration
 ```javascript
 require("dotenv").config();
