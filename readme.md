@@ -1,6 +1,6 @@
 # Book api with best practices
 
-Folder structure
+Folder structure.
 
 ![folder structure](https://user-images.githubusercontent.com/70065792/156903901-096a95b3-e89c-46bb-b340-41d3d7c3145e.PNG)
 
